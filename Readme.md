@@ -28,7 +28,20 @@
 
 * Used **ffmpeg** to generate the video.
 
-  * List down all the name of the images in file - file_paths.txt
+  * List down all the name of the images in file - **file_paths.txt**
+
+    - The **format** of the file is as follows.
+
+      file './StitchedImages/stitch_0.png'
+      file './StitchedImages/stitch_1.png'
+      file './StitchedImages/stitch_2.png'
+      file './StitchedImages/stitch_3.png'
+      file './StitchedImages/stitch_4.png'
+      file './StitchedImages/stitch_5.png'
+      file './StitchedImages/stitch_6.png'
+
+      ...
+
   * ffmpeg -y -r 10 -f concat -safe 0 -i "./file_paths.txt"  "out_fps10.mp4"
     * r is frames per second.
     * Concat - to stitch the images
